@@ -31,30 +31,6 @@
 ![Tux, readMe ](images/Nora_readMe6.png)
 
 
-##  technology used in this project
-
-### NodeJs
-
-Node.js is an open source software platform in JavaScript, oriented towards highly concurrent event-driven network applications that need to be able to scale. 
-![Tux, readMe ](images/640px-Node.js_logo.svg.png)
-
-### Electron Js
-
-Electron is an environment for developing cross-platform desktop applications with web technologies. The infrastructure is coded in node.js, and the interface is built on Chromium tools, the open source part of Google Chrome.
-
-![Tux, readMe ](images/Electron_Software_Framework_Logo.svg.png)
-
-
-### pdf-lib
-pdf-lib was created to address the JavaScript ecosystem's lack of robust support for PDF manipulation (especially for PDF modification).
-![Tux, readMe ](images/readMe12.png)
-
-
-
-
-
-
-
 A basic Electron application needs just these files:
 
 - `package.json` - Points to the app's main file and lists its details and dependencies.
@@ -91,5 +67,22 @@ Note: If you're using Linux Bash for Windows, [see this guide](https://www.howto
 - [hokein/electron-sample-apps](https://github.com/hokein/electron-sample-apps) - small demo apps for the various Electron APIs
 
 
+##  technology used in this project
+
+### NodeJs
+
+Node.js is an open source software platform in JavaScript, oriented towards highly concurrent event-driven network applications that need to be able to scale. 
+![Tux, readMe ](images/640px-Node.js_logo.svg.png)
+
+### Electron Js
+
+Electron is an environment for developing cross-platform desktop applications with web technologies. The infrastructure is coded in node.js, and the interface is built on Chromium tools, the open source part of Google Chrome.
+
+![Tux, readMe ](images/Electron_Software_Framework_Logo.svg.png)
+
+
+### pdf-lib
+pdf-lib was created to address the JavaScript ecosystem's lack of robust support for PDF manipulation (especially for PDF modification).
+<img src="images/readMe12.png" alt="drawing" style="width:200px;"/>
 
 
