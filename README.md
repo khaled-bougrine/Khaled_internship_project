@@ -72,17 +72,20 @@ Note: If you're using Linux Bash for Windows, [see this guide](https://www.howto
 ### NodeJs
 
 Node.js is an open source software platform in JavaScript, oriented towards highly concurrent event-driven network applications that need to be able to scale. 
-![Tux, readMe ](images/640px-Node.js_logo.svg.png)
+<img src="images/640px-Node.js_logo.svg.png" alt="drawing" style="width:300px;"/>
+
+
 
 ### Electron Js
 
 Electron is an environment for developing cross-platform desktop applications with web technologies. The infrastructure is coded in node.js, and the interface is built on Chromium tools, the open source part of Google Chrome.
 
-![Tux, readMe ](images/Electron_Software_Framework_Logo.svg.png)
+<img src="images/Electron_Software_Framework_Logo.svg.png" alt="drawing" style="width:300px;"/>
+
 
 
 ### pdf-lib
 pdf-lib was created to address the JavaScript ecosystem's lack of robust support for PDF manipulation (especially for PDF modification).
-<img src="images/readMe12.png" alt="drawing" style="width:200px;"/>
+<img src="images/readMe12.png" alt="drawing" style="width:300px;"/>
 
 
