@@ -71,7 +71,6 @@ Note: If you're using Linux Bash for Windows, [see this guide](https://www.howto
 
 ### NodeJs
 
-Node.js is an open source software platform in JavaScript, oriented towards highly concurrent event-driven network applications that need to be able to scale. 
 <img src="images/640px-Node.js_logo.svg.png" alt="drawing" style="width:300px;"/>
 
 
