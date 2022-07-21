@@ -1,0 +1,74 @@
+@font-face {
+  font-family:Acme ;
+  src: url(font/Acme-Regular.ttf);
+}
+
+
+
+
+.navStyle 
+{
+    height: 60px; background-color: #243f71;align-content: center;display: flex; justify-content: space-between;
+
+}
+.test
+{
+ color:#095b81;
+}
+.grid-container {
+    border: 1px #ccc solid ;
+    margin: 10px;;
+  display: grid;
+  color: #095b81;
+  grid-template-columns: auto ;
+  grid-template-rows: auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+}
+.grid-container1 {
+  display: grid;
+  color: #095b81;
+  grid-template-columns: auto ;
+  grid-template-rows: auto auto;
+  grid-gap: 10px;
+}
+.grid-container > div {
+text-align: center;
+padding: 20px 0;
+font-size: 12px;
+}
+.title {
+  text-align: center;
+
+  padding-left: 20px;
+  padding-top: 15px;
+  font-family: Acme;
+  font-size: 20px;
+  color: rgb(224,239,239)
+  
+
+}
+.buttonStyle {
+  font-family: Acme;
+  background-color: #ae4c4f;
+  margin-top: 10px;
+
+  font-size: 15px;
+  background-color: #fad1a6 ;
+  border-radius: 0%;height: 40px; margin-right: 10px;
+  
+  ;
+}
+.buttonStyleApercu {
+  margin-top: 10px;
+  font-family: Acme;
+  color: #ffffff;
+  font-size: 15px;
+  background-color: #64c194 ;
+  border-radius: 0%;height: 40px; margin-right: 10px;
+  ;
+  
+
+
+
+}

@@ -1,0 +1,314 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>facturationApp</title>
+    <link href="index.css" rel="stylesheet" type="text/css"/>
+ 
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    <script defer src="renderer.js" ></script>
+</head>
+<body>
+  
+   
+    
+<nav   class="navStyle" >
+    <b class="title">   
+ 
+        LS  &nbsp Technology</b> 
+
+   
+   </nav>
+
+   
+   <body class="container " >
+       <div  style="display: flex; justify-content: space-between;">
+        <div style="margin-top: 50px;;" >
+        <label for="codeClient" style="font-family: Acme; margin-bottom: 10px;;">Code Client</label>    
+        <input id="codeClient" class="form-control" style="border-radius: 0%;" type="number">
+        </div>
+
+            <img src="logo_LS (copy).png" style="width: 30% ; ">
+
+
+
+       </div>
+       <div  id="nouveauAlert"class="alert alert-success" role="alert"  style=" width: 50%; display: block;">
+        Nouvelle &nbsp Facture
+    </div>
+    <div id=updateAlert class="alert alert-primary" role="alert"  style=" width: 50%; display: none;">
+        mettre à jour la  Facture numéro <b id="numeroUpdate"></b>
+    </div>
+
+       <div class="row">
+
+
+           <div class="col-6"  style="display: flex;justify-content: space-around; flex-direction: column;">
+
+               <div >
+                   <label  for="numeroFacture" style="font-family: Acme; font-size: 15px;">Numéro de facture :</label>
+                   <input placeholder="N° FC" id="numeroFacture"  class="form-control" style="border-radius: 8px; width: 60%; margin-left: 30%;" type="text">
+       
+       
+               </div>
+               <div  >
+                   <label  for="date" style="font-family: Acme; font-size: 15px;">Date de facturation :
+                   </label>
+
+                   <input class="form-control"      name="date"
+                   id="date"   style="border-radius: 8px; width: 60%; margin-left: 30%;" type="date">
+       
+       
+               </div>
+               <div >
+
+                <label for="conditionDePaiement" style="font-family: Acme; font-size: 15px;">conditions de paiement :</label>
+                <input placeholder="exemple... 7 jours" id="conditionDePaiement" class="form-control"  style="border-radius: 8px; width: 60%; margin-left: 30%;"type="text">
+              
+       
+                </div>
+   
+   
+           </div>
+           <div class="col-6">
+            <label  style="font-family: Acme; font-size: 15px;">Société: </label>
+
+          
+            <input  placeholder="Nom" id="textbox1" class="form-control" style="border-radius: 0%; margin-top: 5px;" type="text">
+            <input  placeholder="KBIS:" id="textbox2" class="form-control" style="border-radius: 0%; margin-top: 5px;" type="text">
+            <input placeholder="Adresse" id="textbox3" class="form-control" style="border-radius: 0%; margin-top: 5px;" type="text">
+            <input placeholder="Code postal..." id="textbox4" class="form-control" style="border-radius: 0%; margin-top: 5px;" type="text">
+
+            
+               
+
+
+
+
+           </div>
+      
+       </div>
+      
+   
+   
+   
+       
+             <div class="row" style="margin-top: 40px; ">
+
+                <div class="col-5">
+                    <div>
+                        <div  style=" font-family: Acme; "> Designation :</div>
+                        <textarea  id="designation" class = "form-control"  style="height: 150px;width: 100%; border-radius: 0%;;"></textarea>
+                      
+                      
+                    </div>
+               
+                        <div >
+                            <label  for="change" style="font-family: Acme; font-size: 15px;">Cours Change €/TND:</label>
+                            <input placeholder="0.00" id="change"  class="form-control" style="border-radius: 8px; width: 60%; margin-left: 30%;" type="number">
+                
+                
+                        </div>
+               
+
+
+
+
+                </div>
+                <div class="col-7">
+                    <div style="display: flex; justify-content: space-between;">
+                        <div >
+                            <div style="border-bottom: 1px #ccc solid;font-family: Acme; ">Qté</div>
+                            <input placeholder="0.00"  type="number" class="form-control" id="qte" style="height: 50px;width: 70px; border-radius: 0%;border-top: 1px #fff solid;
+                            ">
+        
+        
+                        </div>
+    
+    
+                        <div>
+                            <div style="font-family: Acme; ">P.U</div>
+                            <input placeholder="0.00 €" type="number" class="form-control" id="pu" style="height: 50px;width: 100px;border-radius: 0%; ;">
+            
+            
+                          </div>
+                          <div>
+                            <div style="font-family: Acme; ">Montant HT</div>
+                            <input  class="form-control" placeholder="0.00" id="montant" style="height: 50px;width: 100px;border-radius: 0%; background-color: #fff;" readonly>
+            
+            
+                          </div>
+                            <div>
+                                <div style="font-family: Acme; ">TVA</div>
+                                <input class="form-control" placeholder="exoneré" style=" font-family: Acme; text-align: center;border:  1px #ccc solid;height: 50px;width: 70px; background-color: #fff;" readonly>
+                                    
+                              
+                            </div>
+    
+                  
+                 
+    
+
+                    </div>
+                    <div>
+                        <div >
+                            <div style="display: flex; justify-content: space-between; text-align: center; margin-top: 50px;border-bottom: 1px #ccc solid;">
+                                <div style="font-family: Acme; ">Total HT</div>
+
+                                <b id="total_ht"> </b>            
+                            </div>
+                            <div style="display: flex; justify-content: space-between; text-align: center; margin-top: 50px;border-bottom: 1px #ccc solid;">
+                                <div style="font-family: Acme; ">Total HT DT</div>    
+                                <div id="total_ht_dt"></div>          
+                            </div>
+            
+                            
+                         </div>
+
+                    </div>
+
+
+                </div>
+
+
+              
+                  
+   
+             </div>
+             <!--*******************************************************-->
+             <div>
+                <div class="row">
+                    <div class="col-6" style="display: flex;justify-content: space-between;margin-top: 70px;">
+                        <div>
+                            <div style="font-family: Acme; ">Base TVA</div>
+                            <input placeholder="0.00 €"  class="form-control" id="base_tva" style="height: 50px;width: 100px;border-radius: 0%; background-color: #fff ;" readonly>
+            
+                        </div>
+                        <div>
+                            <div style="font-family: Acme; ">Taux</div>
+                            <input placeholder="0%"  class="form-control"  style="height: 50px;width: 100px;border-radius: 0%; background-color: #fff ;" readonly>
+                        </div>
+                        <div>
+                            <div style="font-family: Acme; ">Montant</div>
+                            <input placeholder="Exonere"  class="form-control " style="height: 50px;width: 100px;border-radius: 0%; background-color: #fff ;" readonly>
+                        </div>
+
+                     </div>
+                     <div class="col-6" style="padding-top: 20px;">
+                        <div style="display: flex; justify-content: space-between; text-align: center; margin-top: 50px;border-bottom: 1px #ccc solid;">
+                            <div style="font-family: Acme; ">Timbre DT</div>    
+                            <div id="">0.600 TND</div>          
+                        </div>
+                        <div style="display: flex; justify-content: space-between; text-align: center; margin-top: 20px;border-bottom: 1px #ccc solid;">
+                            <div style="font-family: Acme; ">Total TTC DT</div>    
+                            <div id="total_ttc_td"></div>          
+                        </div>
+
+
+                     </div>
+
+                 </div>
+                 <div style="margin-top: 10px;;">
+                    <div  style=" font-family: Acme; "> Arrêté la présente facture à la somme de  :</div>
+                 <textarea  id="textarea1" class = "form-control"  style="height: 110px;width: 60%; border-radius: 0%;"></textarea>
+
+
+
+                 </div>
+                 
+
+             </div>
+             <div class="row" style="margin-top: 20px;;">
+                 <div class="col-6">
+                    <div  style=" font-family: Acme; "> Mode Reglement :</div>
+                    <textarea  id="modeReglement" class = "form-control"  style="height: 110px; border-radius: 0%;"></textarea>
+
+                 </div>
+                 <div class="col-6">
+                    <div  style=" font-family: Acme; "> signature :</div>
+                    <textarea  id="signature" class = "form-control"  style="height: 110px; border-radius: 0%;"></textarea>
+
+                 </div>
+             </div>
+              
+           
+   
+               
+   
+               
+     
+
+
+
+       
+         
+
+     
+   
+         <!--888888888888888888888888888888888888888888888888888-->
+         
+      
+     <div   style="display: flex;justify-content: space-around;">
+        <button  id="savePdf" type="button" class="btn btn-outline-primary" style="  font-family: Acme;
+        margin-top: 10px;
+        width: 100%;
+      
+        font-size: 15px;
+        border-radius: 0%;height: 40px; margin-right: 10px;
+        
+        ; "><b>Enregister</b></button>
+        <button  id="nouvelleFcture" type="button" class="btn btn-outline-dark" style="  font-family: Acme;
+        margin-top: 10px;
+        width: 100%;
+      
+        font-size: 15px;
+        border-radius: 0%;height: 40px; margin-right: 10px;
+        
+        ; "><b>Nouvelle facture</b></button>
+
+            
+
+
+
+
+
+     </div>
+     <div class="alert alert-success" role="alert" id="alert" style="display: none; margin-top: 50px;margin-bottom: 50px;;">
+       
+       <div>le fichier ( <b id="file"></b>) est enregistré  <b>&#128526</b> </div>  
+       <div style="display: flex;justify-content: space-around; margin-top: 10px;;">
+        <button type="button"  id="update"class="btn btn-outline-primary" >Modifier Cette facture</button>   
+        <button type="button"  id="delete"class="btn btn-outline-danger" >Supprimer Cette facture</button> 
+
+       </div> 
+
+     
+                 
+
+      </div>
+      <div id="approximation1"style="display: none;" class="alert alert-secondary">
+        <div>on a fait une approximation sur la valeur  totale HT DT <b id="val1"></b> ----><b id="val2"></b></div>
+    
+    </div>
+    <div id="approximation2"style="display: none;" class="alert alert-secondary">
+        <div>on a fait une approximation sur la valeur  totale  TTC DT <b id="val3"></b> ------><b id="val4"></b></div>
+    
+    </div>
+
+
+      </div>
+      <div class="alert alert-warning" id="alert1"  style="visibility: hidden;margin-bottom: 50px;margin-top: 50px;height: 50px;;"  >
+        le champ <b>numéro de facture</b> ne doit pas etre vide
+
+
+
+       </div>
+ 
+
+         
+   
+
+  
+</body>
+</html>

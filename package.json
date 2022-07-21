@@ -1,0 +1,21 @@
+{
+  "name": "facturationapp",
+  "version": "1.0.0",
+  "description": "ls technology facturation App",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "test"
+  },
+  "author": "Khaled Bougrine",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^13.1.7",
+    "electron-packager": "^15.3.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.2",
+    "fontkit": "^1.8.1",
+    "pdf-lib": "^1.16.0"
+  }
+}
